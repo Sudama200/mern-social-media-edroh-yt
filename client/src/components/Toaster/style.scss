@@ -1,0 +1,57 @@
+@import '../../assets/css/variables.scss';
+@import '../../assets/css/main.scss';
+
+.toast-message {
+    font-size: 14px;
+    // width: 34vw;
+    // padding: 30px 20px;
+}
+.Toastify__toast--success {
+    background: #4CB050;
+    border-radius: $borderRadius8;
+    display: $d-flex;
+    align-items: $alignItemsCenter;
+    padding: $paddingZero $padding15px;
+    min-height: 64px;
+    font-family: $fontFamilyRubik;
+    .Toastify__toast-body {
+        font-weight: $fontWeight300;
+        font-size: $fontSize18;
+        line-height: $lineHeight20;
+        margin: $marginZero;
+        font-family: $fontFamilyRubik;
+    }
+    .Toastify__close-button {
+        font-size: $fontSize12;
+        position: $positionAbsolute;
+        right: $Tenpx;
+        top: $Fivepx;
+    }
+    .Toastify__progress-bar.Toastify__progress-bar--success {
+        display: $d-none !important;
+    }
+}
+.Toastify__toast {
+    border-radius: $borderRadius8;
+    display: $d-flex;
+    align-items: $alignItemsCenter;
+    padding: $paddingZero $padding15px;
+    min-height: 64px;
+    font-family: $fontFamilyRubik;
+    .Toastify__toast-body {
+        font-weight: $fontWeight300;
+        font-size: $fontSize18;
+        line-height: $lineHeight20;
+        margin: $marginZero;
+        font-family: $fontFamilyRubik;
+    }
+    .Toastify__close-button {
+        font-size: $fontSize12;
+        position: $positionAbsolute;
+        right: $Tenpx;
+        top: $Fivepx;
+    }
+    .Toastify__progress-bar.Toastify__progress-bar--success {
+        display: $d-none !important;
+    }
+}
