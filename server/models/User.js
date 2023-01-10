@@ -19,7 +19,7 @@ const UserSchema = new mongoose.Schema(
       required: true,
       max: 50,
       unique: true,
-    },
+    },mern-social-media-edroh-yt
     password: {
       type: String,
       required: true,
