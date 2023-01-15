@@ -12,8 +12,11 @@ import { register } from "./controllers/auth.js";
 import authRoutes from './routes/auth.js'
 import userRoutes from './routes/users.js';
 import postRoutes from './routes/posts.js';
-import { verifyToken } from "./middleware/auth.js";
+import { verifyToken } from "./middleware/auth.js"
 import {createPost} from './controllers/posts.js'
+import User from "./models/User.js";
+import Post from "./models/Post.js";
+import {users, posts} from './data/index.js';
 // CONFIGURATIONS ONLY WHEN YOU USE TYPE: MODULE IN JSON FILE
 
 const __filename = fileURLToPath(import.meta.url);
@@ -64,4 +67,7 @@ app.use('/posts', postRoutes)
     useUnifiedTopology: true,
   }).then(() => {
     app.listen(PORT, () => console.log(`server running on PORT: ${PORT}`));
+// only 1 time add
+    // User.insertMany(users);
+    // Post.insertMany(posts);
   }).catch(err => console.log(err));
